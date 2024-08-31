@@ -1,0 +1,123 @@
+/* Estilos generales y tema de color */
+:root {
+    --primary-color: #4CAF50; /* Color verde principal */
+    --secondary-color: #ffffff; /* Color blanco para fondos */
+    --text-color: #333; /* Color del texto principal */
+    --background-color: #f4f4f4; /* Color de fondo suave */
+    --header-background: #333; /* Color de fondo del encabezado */
+    --footer-background: #444; /* Color de fondo del pie de página */
+    --font-family: 'Arial', sans-serif; /* Fuente principal */
+}
+
+/* Resetear margenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--header-background);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--footer-background);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 15px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para el contenedor de datos */
+#data-container {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#data-container p {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    #data-container p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    #data-container p {
+        font-size: 1em;
+    }
+}
+
+/* Estilo para el selector de criptomonedas */
+#selector-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#crypto-select {
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* Estilo para el contenedor del gráfico */
+#chart-container {
+    margin-top: 40px;
+}

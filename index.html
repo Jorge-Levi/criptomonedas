@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios de Criptomonedas en Tiempo Real</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Incluir Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Incluir la biblioteca Luxon -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script>
+    <!-- Incluir el adaptador de fechas Luxon para Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
+</head>
+<body>
+    <!-- Header principal de la página -->
+    <header aria-label="Encabezado principal">
+        <div class="container">
+            <h1>Precios de Criptomonedas en Tiempo Real</h1>
+            <p>Consulta los precios actualizados de las principales criptomonedas cada 10 segundos.</p>
+        </div>
+    </header>
+
+    <!-- Sección principal donde se mostrarán los datos -->
+    <main aria-label="Sección principal">
+        <div class="container">
+            <!-- Selector de Criptomonedas -->
+            <div id="selector-container">
+                <label for="crypto-select">Selecciona una criptomoneda:</label>
+                <select id="crypto-select">
+                    <!-- Opciones de criptomonedas serán añadidas dinámicamente -->
+                </select>
+            </div>
+
+            <!-- Contenedor para los datos -->
+            <div id="data-container" aria-live="polite">
+                <!-- Los datos de las criptomonedas se mostrarán aquí -->
+            </div>
+
+            <!-- Contenedor para el gráfico -->
+            <div id="chart-container">
+                <canvas id="priceChart"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer de la página -->
+    <footer aria-label="Pie de página">
+        <div class="container">
+            <p>&copy; 2024 Visualizador de Criptomonedas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo de JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
