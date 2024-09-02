@@ -120,4 +120,13 @@ footer {
 /* Estilo para el contenedor del gráfico */
 #chart-container {
     margin-top: 40px;
+    width: 100%;
+    height: 400px; 
+    position: relative;
+}
+
+
+#priceChart {
+    width: 100%;
+    height: 100%;
 }
